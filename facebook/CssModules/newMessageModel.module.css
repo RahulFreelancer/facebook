@@ -1,0 +1,103 @@
+.friendListContainer {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding-bottom: 6px 12px;
+}
+
+.topBoxOfFriendListModel {
+  padding-top: 180px;
+  max-width: 400px;
+}
+
+.friendBox {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  padding: 6px 6px;
+  border-radius: 8px;
+  cursor: pointer;
+  align-items: center;
+  user-select: none;
+  -webkit-user-select: none;
+  transition: background-color 150ms;
+}
+
+.friendBox:hover {
+  background-color: #f0f2f5;
+}
+
+.friendDp {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  margin-right: 12px;
+  align-items: center;
+}
+
+.friendDp img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.friendNameAndMsgButton {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.friendName {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  align-items: center;
+}
+
+.friendName span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: block;
+  color: #050505;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.friendMsgButton {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  padding: 3px 8px;
+  color: #fff;
+  background-color: #1877f2;
+  transition: all, 150ms;
+  border-radius: 6px;
+  max-width: 150px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  position: absolute;
+  left: 70%;
+  /* top: 12px; */
+  z-index: 1;
+  /* top: 10px; */
+}
+
+.friendMsgButton:hover {
+  background-color: #1364cf;
+}
+
+.friendMsgButton:active {
+  transform: scale(0.97);
+}

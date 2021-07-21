@@ -1,0 +1,240 @@
+
+
+.sideBar {
+  /* border: 1px solid black; */
+  position: fixed;
+  left: 0;
+  width: 22em;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  z-index: 100;
+}
+
+.heading {
+  width: 90%;
+  padding: 0.4em 0;
+  /* border-bottom: 1px solid black; */
+}
+.secondBox {
+  width: 100%;
+  overflow-y: auto;
+  height: 100%;
+  /* margin-top: 1em; */
+}
+
+.acceptedRequests {
+  padding-bottom: 1em;
+  width: 90%;
+  border-bottom: 1px solid #b8bcc2;
+}
+
+.friendRequests {
+  width: 91%;
+  padding-bottom: 1em;
+  margin-top: 0.5em;
+  border-bottom: 1px solid #b8bcc2;
+  /* height: 140%; */
+}
+
+.friendRequestsHeading {
+  width: 90%;
+  padding: 0.4em 0;
+}
+
+.noFriendRequest {
+  width: 100%;
+  align-items: center;
+  /* height: 100px; */
+}
+
+.recentFriends {
+  cursor: pointer;
+  padding: 10px 8px;
+  border-radius: 7px;
+  margin-bottom: 5px;
+  transition: all 150ms;
+}
+.recentFriends:hover {
+  background-color: #f0f2f5;
+  transition: all 150ms;
+}
+.notSeen {
+  background-color: #e7f3ff;
+}
+.requestDp {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-left: 1px;
+}
+
+.txtAndSpentTime {
+  margin-left: 11px;
+}
+
+.requestText {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0;
+}
+
+.spentTime {
+  color: #1877f2;
+  font-size: 0.7em;
+  margin: 0;
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.friendRequest {
+  cursor: pointer;
+  padding: 10px 8px;
+  border-radius: 7px;
+  transition: all 150ms;
+}
+
+.friendRequest:hover {
+  background-color: #f0f2f5;
+  transition: all 150ms;
+}
+
+.recReqDp {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-left: 1px;
+}
+
+.txtSpentTimeAndButtons {
+  width: 83%;
+  margin-left: 8px;
+  /* border: 1px solid black; */
+}
+
+.txtAndSpentTimeOfRecReq {
+  /* border: 1px solid black; */
+  padding: 0px;
+  font-size: 15px;
+}
+
+.spentTimeOfReqRec {
+  display: flex;
+  align-items: center;
+  color: #1876f2;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.timeDot {
+  display: flex;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #1876f2;
+  margin-left: 6px;
+  margin-top: 2.5px;
+}
+
+.reqButtons {
+  display: flex;
+  justify-content: center;
+  width: 49%;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-top: 9px;
+}
+.confirmRequest {
+  background-color: #1877f2;
+  color: #ffffff;
+}
+
+.confirmRequest:hover {
+  background-color: #3578e5;
+}
+
+.confirmRequest:active {
+  background-color: #3578e5;
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+.deleteRequest {
+  background-color: #e4e6eb;
+  color: #050505;
+}
+
+.deleteRequest:hover {
+  background-color: #dadde1;
+}
+.deleteRequest:active {
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+.reqAcceptedString {
+  font-weight: 500;
+  font-size: 13.8px;
+  font-weight: 400;
+}
+
+.aroundMoreAction {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.aroundMoreAction:hover {
+  background-color: #dadde1;
+}
+
+.aroundMoreAction:active {
+  filter: brightness(90%);
+  transform: scale(0.97);
+  transition: all, 150ms;
+}
+
+.moreAction {
+  width: 17px;
+  height: 17px;
+}
+
+.activeRequestProfile {
+  background-color:#242526;
+  color: white;
+}
+.activeRequestProfile:hover {
+  color: black !important;
+}
+
+.aroundPreviewProfileIcon{
+  /* border: 1px solid green; */
+  position:absolute;
+  top:40%;
+  right:30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.previewProfileIcon{
+  width:100px;
+  height:100px;
+}
+
+.stringOfPreviewProfileIcon{color:#65676b;
+  font-size: 20px;
+font-weight: 700;}
+
+
+.aroundOtherUserProfile{position: relative;
+margin-left: 22em;
+}

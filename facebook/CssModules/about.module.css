@@ -1,0 +1,470 @@
+.aboutMainBox {
+  width: 100%;
+  /* height: 500px; */
+  display: flex;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  margin-top: 16px;
+}
+
+.aboutNavBar {
+  width: 35%;
+  border-right: 1px solid #ced0d4;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 8px 6px;
+}
+
+.aboutNavHeading {
+  width: 0;
+  padding: 0px 10px;
+  /* border: 1px solid green; */
+  color: #050505;
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 14px;
+  text-decoration: none;
+}
+.aboutNavHeading:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.aboutNavItems {
+  /* padding: 0; */
+  color: #65676b;
+  font-size: 15px;
+  padding: 6px 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.aboutNavItemsHover:hover {
+  background-color: #f2f3f5;
+  color: #65676b;
+}
+.aboutNavItemsActive {
+  color: #1876f2;
+  background-color: #e7f3ff;
+}
+.aboutNavItemsActive:hover {
+  color: #1876f2;
+}
+
+/* work and education */
+.aboutData {
+  width: 70%;
+}
+.workAndEducationContainer {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 32px 32px 16px;
+}
+.workAndEduHeadings {
+  color: #050505;
+  font-weight: 500;
+  font-size: 17px;
+}
+.propertyBox {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 32px;
+  /* border: 1px solid black; */
+}
+.addImgAndString {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 6px 0;
+  /* border: 1px solid black; */
+}
+
+.addString {
+  color: #1876f2;
+  font-weight: 500;
+  font-size: 15px;
+  margin-left: 8px;
+}
+.addImgAndString:hover .addString {
+  text-decoration: underline;
+}
+/* work form */
+
+.workForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.textInput {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border: 1px solid rgb(31, 30, 30, 0.5);
+  outline: none;
+  color: #050505;
+  font-size: normal;
+  line-height: 1.25;
+  -webkit-box-shadow: 0 0 0.5px 0.5px rgb(31, 30, 30, 0.5);
+  -moz-box-shadow: 0 0 0.5px 0.5px rgb(31, 30, 30, 0.5);
+  box-shadow: 0 0 0.5px 0.5px rgb(31, 30, 30, 0.5);
+  box-sizing: border-box;
+  border-radius: 6px;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+.bottomBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 14px;
+}
+.saveAndCanelButtonBox {
+  display: flex;
+}
+
+.allButtonStyle {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 15px;
+  font-weight: 500;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 6px 18px;
+  transition: all, 150ms;
+  border-radius: 8px;
+}
+.blueButton {
+  margin-left: 10px;
+  color: #fff;
+  background-color: #1877f2;
+}
+
+.blueButton:hover {
+  background-color: #3578e5;
+}
+
+.greyButton {
+  background-color: #e4ebe6;
+  color: #050505;
+}
+
+.greyButton:hover {
+  background-color: #d9dfdb;
+}
+
+.allButtonStyle:active {
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+.audienceStringAndIcon {
+  /* border: 1px solid green; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.audienceButtonIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 7px;
+}
+
+/* workplace to show */
+.aroundWorkPlaceBox {
+  display: flex;
+  /* align-items: center; */
+  align-items: flex-start;
+  /* border: 1px solid black; */
+  padding: 10px 0 6px 0;
+}
+.aroundImage {
+  display: flex;
+  /* padding: 6px 0; */
+}
+.workPlaceBox {
+  margin-left: 8px;
+  /* margin-top: -5px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+  /* padding: 12px 0 6px 0; */
+}
+.workPlaceString {
+  display: flex;
+  flex-direction: column;
+}
+
+.string1 {
+  color: #050505;
+  font-size: 0.9375rem;
+  /* font-weight: 400; */
+  min-width: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.3333;
+}
+.string2 {
+  color: #65676b;
+  font-size: 15px;
+  min-width: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.3333;
+}
+.notToShowStrig {
+  color: #65676b;
+  font-size: 0.9375rem;
+  min-width: 0;
+  font-weight: 500;
+  max-width: 100%;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.3333;
+}
+
+.editDropdownIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e6eb;
+}
+
+.editDropdownIcon:hover {
+  filter: brightness(98%);
+}
+.editDropdownIcon:active {
+  filter: brightness(92%);
+}
+.aroundAudienceIcon {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aroundAudienceIcon:hover {
+  background-color: #e4e6eb;
+}
+
+.aroundEditDropdown {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.editDropdown {
+  /* width: 35%; */
+  margin-top: 10px;
+  position: absolute;
+  /* top: 350px; */
+  border-radius: 8px;
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  -moz-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  background-color: #fff;
+  padding: 0.4em;
+  /* min-width: 200px; */
+}
+.dropButtons {
+  margin-right: 40px;
+  font-size: 0.9em;
+  font-weight: 500;
+  width: 100%;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #1c1e21 !important;
+}
+.dropButtonIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1em;
+  margin-top: 0.1em;
+}
+.dropButtons:hover {
+  background-color: #d0d3d9;
+}
+
+.editDropdownContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.aroundEditDropdownContainer {
+  width: 45%;
+}
+
+/* gender form  */
+
+.aroundSelectGender {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 5px;
+
+  display: flex;
+  border-radius: 5px;
+}
+.radioInput {
+  max-width: 160px;
+  width: 29%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  border: 1px solid rgb(31, 30, 30, 0.3);
+  border-radius: 5px;
+  color: #1c1e21;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.customGenderDropButton {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgb(31, 30, 30, 0.3);
+  width: 100%;
+  background-color: #fff;
+  color: #1c1e21;
+  padding: 4px 8px;
+  border-radius: 5px;
+}
+
+.customGenderDropMenu {
+  padding: 5px 6px;
+  width: 100%;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  -moz-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+}
+.customGenderDropHeading {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 2px 10px;
+  color: black;
+  background-color: #e4ebe6;
+  font-weight: 600;
+  font-size: 17px;
+  border-radius: 2px;
+}
+
+.customGenderDropItem {
+  width: 100%;
+  padding: 5px 10px;
+  color: #1c1e21;
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 5px;
+  transition: 100ms all;
+}
+.customGenderDropItem:hover {
+  color: #fff;
+  background-color: #3578e5;
+}
+.genderTextInput {
+  padding: 10px !important;
+}
+
+.relDropButton {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+  background-color: #e4e6eb;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all, 150ms;
+  border-radius: 6px;
+}
+.relDropButton:hover {
+  filter: brightness(94%);
+  transition: all, 150ms;
+}
+.relDropButton:active {
+  filter: brightness(88%);
+}
+.relDropMenu {
+  /* display: flex;
+  flex-direction: column; */
+  overflow-y: scroll;
+  width: 300px;
+  /* max-width: 400px; */
+
+  max-height: 250px;
+  border-radius: 6px;
+  padding: 8px 10px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  -moz-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+}
+
+.relDropMenu::-webkit-scrollbar {
+  width: 8px;
+}
+/* Track */
+.relDropMenu::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.relDropMenu::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #888;
+}
+
+/* Handle on hover */
+.relDropMenu::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.relDropMenuOption {
+  padding: 6px 10px;
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 1px;
+  transition: all, 100ms;
+  font-weight: 500;
+  font-size: 15px;
+  color: #050505;
+}
+.relDropMenuOption:hover {
+  background-color: #f5f6f7;
+  filter: brightness(94%);
+  transition: all, 10ms;
+}
+.relDropMenuOption:active {
+  filter: brightness(90%);
+}
+
+.detailTextarea {
+  height: 200px;
+  resize: none;
+}
+.detailTextarea:focus {
+  border-color: #1876f2;
+}

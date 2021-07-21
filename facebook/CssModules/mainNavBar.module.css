@@ -1,0 +1,475 @@
+.mainNavBarContainer {
+  z-index: 101;
+  box-shadow: 0 3px 5px -5px #000000;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.svgIcons {
+  /* #1877f2 */
+  fill: #65676b;
+}
+
+.aroundSearchUser {
+  /* border: 1px solid green; */
+  width: 40%;
+}
+
+.searchDropdown {
+  z-index: 102;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  width: 22em;
+  max-height: 30em;
+  overflow-y: auto;
+
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  -moz-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  transition: all, 200ms;
+}
+.whiteBox {
+  margin-top: 0;
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100 !important;
+}
+.searchDropHead {
+  width: 100%;
+  height: 70px;
+  /* transition: all, 200ms; */
+}
+
+.searchResult {
+  width: 100%;
+  height: 100%;
+
+  margin-bottom: 1em;
+  /* transition: all, 200ms; */
+}
+
+.userBox {
+  padding: 0.4em;
+  margin: 1em 0.5em;
+  border-radius: 10px;
+  /* transition: all, 200ms; */
+}
+.userBox:hover {
+  cursor: pointer;
+  background-color: #ebedf2;
+}
+.userBox:active {
+  background-color: #d0d3d9;
+}
+
+.hideMoreUserDiv {
+  visibility: hidden;
+}
+
+.getMoreUserButton {
+  user-select: none;
+  color: #1877f2;
+  font-weight: 500;
+  font-size: 1em;
+  cursor: pointer;
+}
+.getMoreUserButton:hover {
+  text-decoration: underline;
+}
+
+.backButton {
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  transform: translate(14%, 0);
+  transition: all 150ms;
+}
+.backButton:hover {
+  cursor: pointer;
+  background-color: #ebedf2;
+}
+.backButton:active {
+  background-color: #d0d3d9;
+  transition: all, 150ms;
+}
+.hideSearchDropdown {
+  visibility: hidden;
+  transition: all, 0s, ease;
+}
+/* .showFbLogo {
+  z-index: 7;
+} */
+.searchUser {
+  z-index: 102;
+  width: 100%;
+  position: relative;
+  margin-left: 4%;
+}
+
+.aroundSearchInput {
+  position: relative;
+  overflow: hidden;
+  width: 16em;
+  background-color: #ebedf2;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 20px;
+  transition: all, 150ms;
+}
+
+.searchInput {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #ebedf2;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 20px;
+  transition: all, 200ms;
+  padding-bottom: 0.5em;
+  padding-top: 0.3em;
+}
+
+.searchInput:focus {
+  background-color: #ebedf2 !important;
+  width: 100%;
+  transform: translate(-12%, 0);
+  transition: all, 200ms;
+}
+.searchIcon {
+  /* background-color: black; */
+  border-radius: 20px;
+  height: 100%;
+  width: 12%;
+  margin: 0;
+  cursor: text;
+}
+
+.hideSearchIcon {
+  display: none;
+}
+.tooltip {
+  user-select: none;
+  visibility: hidden;
+  top: 53px;
+  background-color: rgb(28, 28, 28, 0.8);
+  /* background: transparent; */
+  color: #f2f3f5;
+  font-size: small;
+  text-align: center;
+  border-radius: 6px;
+  padding: 7px 10px;
+  -webkit-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  -moz-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  z-index: 101;
+  /* Position the tooltip */
+  position: absolute;
+  /* transition: all 200ms; */
+}
+
+/* friends and home icon css */
+.homeAndfriendLinks {
+  /* border: 2px solid yellow; */
+  width: 20%;
+  /* padding: 100px 0; */
+}
+
+.aroundHomeAndFriend {
+  display: flex;
+  justify-content: center;
+  width: 45%;
+  margin: 0 2%;
+}
+
+.homeAndFriend {
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
+.aroundFriendsNotiBadge {
+  position: absolute;
+  top: 3px;
+  left: 55.5%;
+}
+.friendsNotiBadge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 17px;
+  min-height: 17px;
+  user-select: none;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 0 4px;
+  font-size: 11px;
+  font-weight: 500;
+  color: #f2f3f5;
+  background-color: #fa383e;
+}
+.aroundHomeAndFriend:hover .tooltip {
+  visibility: visible;
+  transition: all 200ms;
+}
+
+.hideTooltip {
+  visibility: hidden !important;
+}
+
+#aroundSvgHover:hover {
+  background-color: #e4e6eb;
+  color: #1877f2;
+}
+#aroundSvgHover:active {
+  background-color: #d0d3d9;
+}
+
+.svgIconActive {
+  fill: #1877f2;
+}
+
+.bottomBorderActive {
+  border-bottom-style: solid;
+  border-bottom-color: #1877f2;
+  border-radius: 0;
+}
+
+/* profile chat and notification icon css */
+
+.profileButton {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  background-color: white;
+  border-radius: 50px;
+  margin-right: 0.5em;
+  font-weight: 500;
+  color: #303030;
+  padding: 0;
+  padding-right: 0.6em;
+  transition: all, 100ms;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.profileButton:hover {
+  background-color: #e4e6eb;
+}
+.profileButton:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.profileButton:active {
+  background-color: #d0d3d9;
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+.profileButtonActive {
+  background-color: rgb(24, 117, 237, 0.2);
+  color: #1877f2;
+}
+
+.profileButtonActive:active {
+  background-color: rgb(149, 173, 196, 0.6) !important;
+}
+.profileButtonActive:hover {
+  background-color: rgb(102, 153, 204, 0.4);
+}
+.profileButtonDp {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: 0.18em;
+  margin-right: 0.4em;
+}
+
+.profChatNoti {
+  padding: 0.3em;
+  width: 38%;
+  /* border: 2px solid black; */
+}
+/* createPostIcon  */
+
+.aroundRightSideIcons {
+  margin: 2px 4px;
+  display: flex;
+  justify-content: center;
+}
+
+.aroundRightSideIcons:hover .tooltip {
+  visibility: visible;
+  transition: all 200ms;
+}
+
+.rightSideIcon {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4e6eb;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 100%;
+  text-align: center;
+  border: none;
+  transition: all, 100ms;
+  padding: 0;
+}
+
+.rightSideIcon:hover {
+  background-color: #d0d3d9;
+}
+
+.rightSideIcon:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border: none;
+}
+
+.rightSideIcon:active {
+  filter: brightness(92%);
+  transform: scale(0.94);
+  transition: all, 100ms;
+}
+
+.createPostIcon {
+  background-image: url("http://localhost:3000/img/createPost.png");
+  background-position: 0px -749px;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -025em;
+  font-style: italic;
+}
+
+.msgPosition {
+  height: 55%;
+  width: 55%;
+  background-color: black;
+
+  margin: 0;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-image: url("../public//img/chat.svg");
+}
+
+.notiPosition {
+  height: 45%;
+  width: 45%;
+  background-color: black;
+  margin: 0;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-image: url("../public//img/notiFilled.svg");
+}
+
+.settingPosition {
+  height: 45%;
+  width: 45%;
+  background-color: black;
+  margin: 0;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-image: url("../public//img/dropicon.svg");
+}
+
+.createPostActive {
+  filter: invert(0.39) sepia(0.57) saturate(2) saturate(2) saturate(2)
+    saturate(2) saturate(2) saturate(1.4775) hue-rotate(202deg) brightness(0.97)
+    contrast(0.96);
+  -webkit-filter: invert(0.39) sepia(0.57) saturate(2) saturate(2) saturate(2)
+    saturate(2) saturate(2) saturate(1.4775) hue-rotate(202deg) brightness(0.97)
+    contrast(0.96);
+}
+
+.ButtonActive {
+  background-color: #e7f3ff;
+}
+.ButtonActive:hover {
+  filter: brightness(95%);
+  background-color: #e7f3ff !important;
+}
+
+.IconActive {
+  background-color: #1877f2;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+/* noti Badge */
+
+.aroundNotiBadge {
+  min-height: 0;
+  /* top: -1px; */
+  top: 1px;
+  box-sizing: border-box;
+  display: inline-flex;
+  position: absolute;
+  flex-shrink: 0;
+  cursor: pointer;
+  flex-basis: auto;
+  min-width: 0;
+  align-items: stretch;
+  background-color: transparent;
+  /* left: 26px; */
+  margin-left: 26px;
+  user-select: none;
+  -webkit-user-select: none;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+}
+
+.aroundNotiBadgeOne {
+  display: inline-flex;
+  height: 19px;
+  justify-content: center;
+  align-items: center;
+  min-width: 19px;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background-color: #f02849;
+  line-height: 1;
+  border-radius: 50%;
+}
+
+.aroundNotiBadgeOne span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 5px;
+  color: #ffffff;
+}

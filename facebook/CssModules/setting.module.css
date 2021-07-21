@@ -1,0 +1,90 @@
+.mainDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  background-color: white;
+  height: 900px;
+}
+.mainDivOne {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  flex-grow: 1;
+  margin: 70px 0;
+}
+
+.generalSettingHeading {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  padding-top: 6px;
+  padding-bottom: 16px;
+  /* border: 1px solid green; */
+  border-bottom: 3px solid #ebedf0;
+}
+
+.generalSettingHeading span {
+  color: #1c1e21;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  min-height: 20px;
+  padding-bottom: 2px;
+  vertical-align: bottom;
+}
+.generalSettingDetails {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.generaSettingButton {
+  display: flex;
+  flex-grow: 1;
+  padding: 12px 6px;
+}
+
+.settingButtonFirstCol {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.settingButtonFirstCol span {
+  color: #1c1e21;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  padding-right: 5px;
+  width: 190px;
+}
+
+.settingButtonSecAndThirdCol {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.settingButtonSecAndThirdCol .colValue {
+  font-weight: 600;
+  color: #65676b;
+  font-size: 15px;
+  letter-spacing: -0.24px;
+  line-height: 20px;
+}
+
+.editCol {
+  font-size: 15px;
+  color: #216fdb;
+  cursor: pointer;
+}
+
+.editCol:hover {
+  text-decoration: underline;
+}

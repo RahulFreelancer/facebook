@@ -1,0 +1,387 @@
+.firstBoxOfMainBox {
+  display: flex;
+  margin-top: 20px;
+  width: 100%;
+
+  padding: 0 10px;
+  /* border: 1px solid red; */
+}
+.relationQueryBox {
+  background-color: white;
+  border-radius: 8px;
+  width: 100%;
+  /* margin:12px; */
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addFriendString {
+  /* border: 1px solid red; */
+  width: 75%;
+}
+.doYouKnowString {
+  color: #050505;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.ifKnowString {
+  color: #65676b;
+  font-size: 17px;
+  font-weight: 400;
+}
+.aroundRequestButton {
+  /* border: 1px solid black; */
+  min-width: 150px;
+  display: flex;
+  align-items: center;
+  width: 20%;
+  justify-content: flex-end;
+}
+
+/* if notFriend then show add friend button */
+.requestButton {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #1877f2;
+  transition: all, 150ms;
+  border-radius: 6px;
+}
+.addFriendIcon {
+  margin-right: 5px;
+}
+.requestButton:hover {
+  background-color: #3578e5;
+}
+.requestButton:active {
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+/* if respond then show confirm and delete request button  */
+.respondString {
+  width: 65%;
+}
+.aroundConfAndDelete {
+  margin: 9px 0;
+  /* border:1px solid green; */
+  min-width: 320px;
+  display: flex;
+  width: 30%;
+  justify-content: flex-end;
+}
+
+.reqButtons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  font-weight: 500;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #1877f2;
+  transition: all, 150ms;
+  border-radius: 6px;
+  margin-right: 10px;
+  /* margin:5px; */
+}
+.confirmRequest {
+  background-color: #1877f2;
+  color: #ffffff;
+}
+
+.confirmRequest:hover {
+  background-color: #3578e5;
+}
+
+.confirmRequest:active {
+  background-color: #3578e5;
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+.deleteRequest {
+  background-color: #e4e6eb;
+  color: #050505;
+}
+
+.deleteRequest:hover {
+  background-color: #dadde1;
+}
+.deleteRequest:active {
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+.secondBoxOfMainBox {
+  /* border: 3px solid blue; */
+  margin: 16px 0 0;
+  padding: 0 8px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 880px) {
+  .secondBoxOfMainBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+    /* justify-content: space-between; */
+    /* align-items:; */
+  }
+}
+
+.infoPhotosFriends {
+  /* height: 1800px; */
+  box-sizing: border-box;
+  margin: 8px;
+  /* height: 100%; */
+  /* border: 1px solid yellow; */
+  flex-basis: 360px;
+  flex-grow: 18;
+  max-width: 680px;
+  flex-shrink: 1;
+  /* width: 100%; */
+  /* width: 45%; */
+}
+.stopStickyPosition {
+  position: relative !important;
+  top: 0 !important;
+}
+
+@media only screen and (max-width: 880px) {
+  .infoPhotosFriends {
+    box-sizing: border-box;
+    width: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-between; */
+    /* align-items:; */
+  }
+}
+
+.commonOfInfoPhotosFriends {
+  width: 100%;
+  box-sizing: border-box;
+  padding-bottom: 14px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px #00000033;
+  margin-bottom: 16px;
+}
+.infoContainer {
+  /* margin-top: 12px; */
+}
+
+.introDetailBoxWithEditButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 14px 16px 0;
+
+  margin: -6px;
+}
+
+.aboutPropertyBox {
+  box-sizing: border-box;
+  display: flex;
+  /* align-items: flex-start; */
+  width: 100%;
+  margin: -6px;
+  padding: 0 0 14px 0px;
+}
+.propertyImg {
+  /* border: 1px solid green; */
+  padding: 6px;
+}
+
+.propertyString {
+  width: 100%;
+  padding: 6px;
+}
+.propertyString span {
+  color: #050505;
+  font-size: 15px;
+}
+
+.introEditAboutDetailButton {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 6px 12px;
+  background-color: #e4e6eb;
+  transition: 100ms all;
+  border-radius: 6px;
+}
+.introEditAboutDetailButton span {
+  color: #050505;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0 -3px;
+}
+
+.introEditAboutDetailButton:hover {
+  filter: brightness(94%);
+  transition: all, 100ms;
+}
+.introEditAboutDetailButton:active {
+  filter: brightness(90%);
+  transform: scale(0.99);
+}
+
+.boldProperty {
+  font-weight: 500;
+}
+
+.photosContainer {
+  /* margin-bottom: 16px; */
+}
+.friendsContainer {
+  /* margin-top: 14px; */
+}
+
+.aroundHeadingOfThreeBox {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 0 4px;
+}
+
+.headingOfThreeBox {
+  box-sizing: border-box;
+  /* border: 1px solid blue; */
+  padding: 0px 16px;
+}
+
+.mainHeadingBox {
+  display: flex;
+  justify-content: space-between;
+}
+.mainHeadingBox span {
+  color: #050505;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.mainHeadingBox div {
+  font-size: 17px;
+  color: #216fdb;
+}
+.totalFriendNoBox span {
+  font-size: 17px;
+  color: #65676b;
+}
+
+.introAllFriendsFirstBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: -3px;
+  padding: 12px 12px 0;
+}
+
+.introAllFriendsSecondBox {
+  width: 100%;
+  padding: 6px;
+}
+.introAllFriendsThirdBox {
+  width: 100%;
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}
+.actualFriendBox {
+  /* width: 102px; */
+  display: flex;
+  flex-direction: column;
+  margin: 0 10px 12px;
+}
+.friendDp {
+  display: flex;
+  box-sizing: border-box;
+}
+.friendDp:hover {
+  filter: brightness(95%);
+}
+.friendDp img {
+  width: 102px;
+  height: 102px;
+  border-radius: 8px;
+}
+.friendName {
+  min-height: 2.5em;
+  display: flex;
+  flex-direction: column;
+  margin: 4px 0px 0px;
+}
+.friendName span {
+  font-size: 13px;
+  color: #050505;
+  font-weight: 500;
+}
+
+.friendName span:hover {
+  text-decoration: underline;
+}
+/* .friendsContainer{  
+    } */
+.allPosts {
+  /* width: 100%; */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  margin: 8px;
+  flex-basis: 500px;
+  flex-grow: 25;
+  flex-shrink: 1;
+  max-width: 680px;
+  /* margin-left: 14px; */
+}
+
+@media only screen and (max-width: 880px) {
+  .allPosts {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+}
+
+.postsFilterContainer {
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+.postsContainer {
+  box-sizing: border-box;
+  width: 100%;
+}

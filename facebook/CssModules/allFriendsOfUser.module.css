@@ -1,0 +1,211 @@
+.allFriends {
+  display: flex;
+  flex-direction: column;
+  border-radius: 6px;
+  background: #fff;
+  width: 100%;
+  height: 800px;
+  align-items: center;
+  padding: 18px;
+  margin-top: 16px;
+}
+
+.friendsHeading {
+  width: 100%;
+  /* border:1px solid black; */
+  margin-bottom: 15px;
+}
+.friendsHeading a {
+  color: #050505;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.friendsNav {
+  width: 100%;
+  /* border:1px solid green; */
+  margin-bottom: 5px;
+  padding: 16px 0;
+
+  margin-bottom: 18px;
+}
+
+.friendsNavItems {
+  padding: 16px 22px;
+  /* /* border: 1px solid green;  */
+  font-size: 15px;
+
+  border-radius: 8px;
+  color: #65676b;
+  text-align: center;
+  font-weight: 500;
+}
+.friendsNavItemActive:hover {
+  text-decoration: none;
+}
+
+.friendsNavItemsHover:hover {
+  text-decoration: none;
+  background-color: #f0f2f5;
+  color: #65676b;
+}
+.friendsNavItemsHover:active {
+  filter: brightness(90%);
+}
+
+.friendsNavItemActive {
+  color: #1876f2 !important;
+  border-bottom-style: solid;
+  border-bottom-color: #1876f2;
+  border-radius: 0;
+  transition: all, 100ms;
+}
+
+/* .activeShowAllFriends{color:#1876f2 !important;
+    /* border-bottom: 2px solid #1876f2 !important; */
+/* }  */
+
+.friendsList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  /* border:1px solid yellow */
+}
+
+.friendBox {
+  /* margin:5px; */
+  margin-top: 10px;
+  padding: 16px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: space-between;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0.5px 0.5px rgb(31, 30, 30, 0.1);
+  -moz-box-shadow: 0 0 0.5px 0.5px rgb(31, 30, 30, 0.1);
+  box-shadow: 0 0 0.5px 0.5px rgb(31, 30, 30, 0.1);
+}
+
+.friendProfilePhoto {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+}
+
+.friendNameLink {
+  margin-left: 11px;
+  color: #050505;
+  font-size: 17px;
+  font-weight: 500;
+  /* border:1px solid green; */
+  width: 35%;
+  max-width: 150px;
+}
+.aroundRequestButtons {
+  width: 30%;
+  min-width: 145px;
+  display: flex;
+  /* border :1px solid black; */
+
+  justify-content: flex-end;
+}
+
+/* if notFriend then show add friend button */
+.requestButtons {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 15px;
+  font-weight: 500;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  padding: 6px 18px;
+  transition: all, 150ms;
+  border-radius: 8px;
+}
+.friendAddFriendButton {
+  color: #fff;
+  background-color: #1877f2;
+}
+
+.friendAddFriendButton:hover {
+  background-color: #3578e5;
+}
+
+.friendCancelRequestButton {
+  background-color: #e7f3ff;
+  color: #1877f2;
+}
+.friendCancelRequestButton:hover {
+  background-color: #d3e6f8;
+}
+
+.friendRespondButton {
+  background-color: #e7f3ff;
+  color: #1877f2;
+}
+.friendRespondButton:hover {
+  background-color: #d3e6f8;
+}
+.friendsButton {
+  background-color: #e4ebe6;
+  color: #050505;
+}
+
+.friendsButton:hover {
+  background-color: #d9dfdb;
+}
+
+.requestButtons:active {
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+.aroundDropdown {
+  position: absolute;
+  width: 220px;
+}
+.dropdownStyle {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  -moz-box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  box-shadow: 0 0 10px 1px rgb(31, 30, 30, 0.3);
+  background-color: #fff;
+  padding: 0.4em;
+  min-width: 200px;
+  margin-top: 2.7em;
+  width: 100%;
+}
+.hideDropDown {
+  display: none;
+}
+
+.dropButtons {
+  font-size: 0.9em;
+  font-weight: 500;
+  width: 100%;
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #1c1e21 !important;
+}
+.dropButtonIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 1em;
+  margin-top: 0.1em;
+}
+.dropButtons:hover {
+  background-color: #d0d3d9;
+}
+
+.dropButtons:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}

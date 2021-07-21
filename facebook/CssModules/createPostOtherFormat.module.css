@@ -1,0 +1,115 @@
+.containerCreatePost {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 12px 16px 10px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px #00000033;
+  border-radius: 8px;
+}
+
+.dpAndTextContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.dpOfCreater {
+  display: flex;
+  margin-right: 8px;
+}
+
+.dpOfCreater img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dpOfCreater img:hover {
+  filter: brightness(94%);
+}
+
+.textAreaForCaption {
+  box-sizing: border-box;
+  display: flex;
+  flex-grow: 1;
+  padding: 8px 12px;
+  min-height: 40px;
+  border-radius: 20px;
+  background-color: #f0f2f5;
+  user-select: none;
+  -webkit-user-select: none;
+  justify-content: flex-start;
+  cursor: text;
+}
+.textAreaForCaption:hover {
+  filter: brightness(94%);
+}
+
+.textAreaForCaption span {
+  color: #65676b;
+  font-size: 1.0625rem;
+}
+
+.photoAndVideoSelectContainer {
+  box-sizing: border-box;
+  display: flex;
+  border-top: solid 1px #e4e6eb;
+  width: 100%;
+  min-height: 40px;
+  margin-top: 12px;
+  padding-top: 8px;
+  /* border: 1px solid #e4e6eb; */
+  justify-content: space-around;
+}
+
+.aroundPhotoAndVideoSelect {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px;
+
+  transition: background-color 150ms;
+}
+.photoAndVideoSelect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* margin-bottom: 8px; */
+}
+
+.aroundPhotoAndVideoSelect:hover {
+  background-color: #f5f6f7;
+}
+
+.addPhotoAndVideoIcon i {
+  height: 24px;
+  width: 24px;
+  background-image: url("http://localhost:3000/img/postIconsPng.png");
+  background-position: 0px -125px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  /* vertical-align: top; */
+  vertical-align: -0.25em;
+  font-style: italic;
+  object-fit: cover;
+}
+
+.photoAndVideoSelect span {
+  font-weight: 600;
+  color: #65676b;
+  font-size: 0.9375rem;
+  word-wrap: break-word;
+  line-height: 1.3333;
+  margin-left: 5px;
+}

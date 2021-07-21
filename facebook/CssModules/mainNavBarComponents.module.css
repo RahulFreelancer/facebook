@@ -1,0 +1,863 @@
+.dropdownBox {
+  position: absolute;
+  padding-bottom: 8px;
+  top: 50px;
+  display: block;
+  right: 30px;
+  z-index: 10;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: 1s all;
+  box-shadow: 0 12px 28px 0 rgb(0, 0, 0, 0.2), 0 2px 4px 0 rgb(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgb(255, 255, 255, 0.5);
+}
+
+.showNoti {
+  visibility: visible !important;
+}
+
+.mainNotiBadge {
+  position: fixed !important;
+  padding-bottom: 10px;
+  display: block;
+  z-index: 10;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: 1s all;
+  box-shadow: 0 12px 28px 0 rgb(0, 0, 0, 0.2), 0 2px 4px 0 rgb(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgb(255, 255, 255, 0.5);
+  /* visibility: hidden; */
+  bottom: 40px;
+  left: 30px;
+  /* width: 0; */
+  max-width: 360px;
+  max-height: 200px;
+  visibility: hidden;
+  transition: visibility 150ms;
+}
+.dropdownBoxOne {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  max-width: calc(100vw - 24px);
+  max-height: 500px;
+  /* max-height: calc(100vh - 72px); */
+}
+
+.dropdownBoxTwo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex-shrink: 1;
+  flex-grow: 1;
+  min-height: 0;
+  perspective-origin: right top;
+  overflow-x: hidden;
+  overflow-y: auto;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  will-change: transform, scroll-position;
+}
+
+.dropdownBoxThree {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.dropdownBoxHeading {
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  margin-bottom: 12px;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 16px;
+}
+.dropdownBoxHeadingBadge {
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 16px;
+  margin-bottom: 8px !important;
+}
+.dropdownBoxHeadingOne {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  min-width: 0;
+  flex-shrink: 1;
+  max-width: 100%;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-basis: 0px;
+}
+.dropdownBoxHeadingTwo {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  position: relative;
+}
+
+.dropdownBoxHeadingTwo .mainHeading {
+  display: flex;
+  box-sizing: border-box;
+  flex-basis: auto;
+  position: relative;
+  min-width: 0;
+  flex-shrink: 1;
+  max-width: 100%;
+  flex-grow: 1;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.mainHeading span {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  font-weight: 700;
+  color: #050505;
+  line-height: 1.1667;
+  word-break: break-word;
+  cursor: text;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.mainHeadingBadge span {
+  font-size: 1.5rem;
+  word-wrap: break-word;
+
+  color: #050505;
+  line-height: 1.1667;
+  word-break: break-word;
+  cursor: text;
+  user-select: none;
+  -webkit-user-select: none;
+  font-weight: 500 !important;
+}
+
+.editNotiButton {
+  display: flex;
+  margin: -8px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.notiBox:hover + .aroundEditNoti .editSingleNoti {
+  display: flex !important;
+}
+
+.editSingleNoti:hover {
+  display: flex;
+}
+.editSingleNoti {
+  display: none;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  left: 80%;
+  top: -54px;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 1px 2px 2px #00000033;
+  padding: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  z-index: 10;
+}
+.editSingleNoti:active {
+  filter: brightness(95%);
+}
+.dropdown-menu {
+  padding: 0 !important;
+  border-radius: 8px;
+}
+.dropMenu {
+  overflow: hidden;
+  width: 344px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 8px 0px;
+  box-shadow: 0 12px 28px 0 rgb(0, 0, 0, 0.2), 0 2px 4px 0 rgb(0, 0, 0, 0.1),
+    inset 0 0 0 1px rgb(255, 255, 255, 0.5);
+}
+.dropMenuButton {
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  margin: 0 8px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 150ms;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.dropMenuButton:hover {
+  background-color: #f2f3f5;
+}
+
+.aroundActionIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: baseline;
+  margin-right: 12px;
+}
+
+.aroundActionIcon .readUnreadNoti {
+  background-image: url(http://localhost:3000/img/readUnread.png);
+  background-position: 0px -393px;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -0.25em;
+  font-style: italic;
+  filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+  -webkit-filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+}
+.aroundActionIcon .removeNoti {
+  background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yo/r/xlvA8s3rXji.png);
+  background-position: 0px -814px;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -0.25em;
+  font-style: italic;
+  filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+  -webkit-filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+}
+
+.aroundActionString {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+.aroundActionString span {
+  color: #050505;
+  font-size: 0.9375rem;
+  text-align: left;
+  min-width: 0;
+  font-weight: 500;
+  max-width: 100%;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.3333;
+}
+
+.editNotiButtonOne {
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: pointer;
+}
+.editNotiButtonOne:hover {
+  background-color: #d0d3d9;
+}
+
+.editNotiIcon {
+  background-image: url("http://localhost:3000/img/editNotiButton.png");
+  background-position: 0px -515px;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -25em;
+  font-style: italic;
+  filter: invert(0.39) sepia(0.21) saturate(2) saturate(1.095)
+    hue-rotate(174deg) brightness(0.94) contrast(0.86);
+  -webkit-filter: invert(0.39) sepia(0.21) saturate(2) saturate(1.095)
+    hue-rotate(174deg) brightness(0.94) contrast(0.86);
+}
+
+/* noti box */
+
+.notiBox {
+  position: relative;
+  display: block;
+  padding: 0 8px;
+}
+
+.notiBoxOne {
+  box-sizing: border-box;
+  display: block;
+  flex-basis: auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+  min-height: 0;
+  min-width: 0;
+  cursor: pointer;
+  align-items: stretch;
+  background-color: transparent;
+  transition: background-color 150ms;
+}
+
+.notiBoxOne:hover {
+  background-color: #f2f3f5;
+}
+.notiBoxOne:active {
+  filter: brightness(95%);
+}
+.notiBoxTwo {
+  box-sizing: border-box;
+  display: flex;
+  flex-shrink: 1;
+  flex-grow: 1;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 8px;
+}
+
+.notiBoxDp {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-self: flex-start;
+  margin: 8px 12px 8px 0;
+}
+
+.notiBoxDpOne {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.notiAvtarCircle {
+  stroke-width: 2;
+  stroke: rgba(0, 0, 0, 0.1);
+  fill: none;
+}
+
+.dpActionEmoji {
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 2;
+  bottom: 8px;
+  right: 8px;
+  transform: translate(50%, 50%);
+}
+
+.dpActionEmojiOne {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-shrink: 1;
+  flex-grow: 1;
+  border-radius: 50%;
+  min-height: 0;
+  min-width: 0;
+}
+.dpActionEmojiOne .commentIcon {
+  height: 28px;
+  width: 28px;
+  background-image: url("http://localhost:3000/img/commonIcons.png");
+  background-position: 0px -638px;
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -0.25em;
+  object-fit: cover;
+  font-style: italic;
+}
+
+/* string of noti  */
+
+.notiBoxString {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  min-height: 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* action string of noti */
+.actionByUser {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  padding: 12px 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  min-width: 0;
+  min-height: 0;
+}
+
+.actionByUserOne {
+  display: flex;
+  flex-direction: column;
+  margin: -5px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.actionByUserString {
+  display: block;
+  margin: 5px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.actionByUserString span {
+  display: block;
+  line-height: 1.3333;
+  word-break: break-word;
+  color: #050505;
+  font-weight: normal;
+  font-size: 0.93;
+  text-align: left;
+  min-width: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+}
+.notSeenColorUsername {
+  font-weight: 600 !important;
+}
+.notReadColor span {
+  color: #050505 !important;
+}
+
+.actionByUserDate {
+  display: flex;
+  /* margin: 5px; */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.actionByUserDate span {
+  display: block;
+  color: #8a8d91;
+  max-width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
+  font-weight: normal;
+  line-height: 1.2308;
+  text-align: left;
+  min-width: 0;
+  font-size: 0.8125rem;
+}
+/* see or unseen status of noti */
+
+.notSeenDot {
+  display: block;
+  position: relative;
+  margin: 8px 0 8px 12px;
+  align-self: center;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.notSeenDotOne {
+  display: flex;
+  align-items: center;
+}
+
+.notSeenDotTwo {
+  position: relative;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  width: 20px;
+  height: 48px;
+  min-height: 0;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+  padding-left: 4px;
+}
+
+.notSeenDotTwo span {
+  display: inline-flex;
+  background-color: #1876f2;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+}
+
+/* setting dropdown */
+
+.profileLinkOne {
+  display: block;
+  padding: 0 8px;
+  cursor: pointer;
+}
+.profileLinkTwo {
+  box-sizing: border-box;
+  position: relative;
+  min-width: 0;
+  min-height: 44px;
+  padding: 0 8px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+  border-radius: 8px;
+  transition: background-color 150ms;
+  margin-top: 8px;
+}
+.profileLinkTwo:hover {
+  background-color: #f2f3f5;
+}
+.profileLinkTwo:active {
+  filter: brightness(96%);
+}
+
+.profileLinkDp {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 12px 12px 0;
+}
+.profileLinkDpOne {
+  position: relative;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.profileLinkDpAvatar {
+  stroke-width: 2;
+  stroke: rgba(0, 0, 0, 0.1);
+  fill: none;
+}
+
+.profileLinkUsername {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.profileLinkUsernameOne {
+  box-sizing: border-box;
+  position: relative;
+  min-height: 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 12px 0;
+}
+.aroundUsernameString {
+  margin-top: 3px;
+}
+.aroundUsernameString .usernameString {
+  display: block;
+  color: #050505;
+  word-break: break-word;
+  font-weight: 600;
+  text-align: left;
+  min-width: 0;
+  line-height: 1.1765;
+  max-width: 100%;
+  word-wrap: break-word;
+  font-size: 1.0625rem;
+}
+.aroundUsernameString .extraString {
+  display: block;
+  word-break: break-word;
+  color: #65676b;
+  font-weight: normal;
+  font-size: 0.9375rem;
+  text-align: left;
+  min-width: 0;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.3333;
+}
+
+.hrLine {
+  margin: 8px 16px;
+  background-color: #ced0d4;
+}
+.aroundSettingDropButton {
+  display: block;
+  padding: 0 8px;
+}
+.settingDropButton {
+  box-sizing: border-box;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: stretch;
+  flex-basis: auto;
+  flex-shrink: 0;
+  min-height: 0;
+  border-radius: 8px;
+  transition: background-color 150ms;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.settingDropButton:hover {
+  background-color: #f2f3f5;
+}
+.settingDropButton:active {
+  filter: brightness(95%);
+}
+.settingDropButtonOne {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  padding: 0 8px;
+  min-height: 44px;
+  min-width: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.settingDropButtonIcon {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin: 8px 12px 8px 0;
+}
+.settingDropButtonIconOne {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #e4e6eb;
+  box-sizing: border-box;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.settingIcon {
+  background-image: url(http://localhost:3000/img/settingIcon.png);
+  background-position: 0px -939px;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -0.25em;
+  font-style: italic;
+  filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+  -webkit-filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+}
+
+.settingDropButtonStringAndIcon {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  min-height: 0;
+  min-width: 0;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.settingDropButtonString {
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 0;
+  padding: 12px 0;
+  min-height: 0;
+  min-width: 0;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.settingDropButtonString span {
+  display: block;
+  word-break: break-word;
+  color: #050505;
+  font-size: 0.9375rem;
+  text-align: left;
+  min-width: 0;
+  font-weight: 500;
+  max-width: 100%;
+  word-wrap: break-word;
+  line-height: 1.3333;
+  margin: 5px 0;
+}
+
+.settingDropButtonEndIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: flex-start;
+  margin: 12px 0 12px 12px;
+}
+.endIcon {
+  background-image: url(http://localhost:3000/img/setingDropButtonEndIcon.png);
+  background-position: -25px -180px;
+  background-size: auto;
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -0.25em;
+  font-style: italic;
+  filter: invert(0.39) sepia(0.21) saturate(2) saturate(1.095)
+    hue-rotate(174deg) brightness(0.94) contrast(0.86);
+  -webkit-filter: invert(0.39) sepia(0.21) saturate(2) saturate(1.095)
+    hue-rotate(174deg) brightness(0.94) contrast(0.86);
+}
+
+.logoutIcon {
+  background-image: url(http://localhost:3000/img/logout.png);
+  background-position: 0px -429px;
+  background-size: auto;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -0.25em;
+  font-style: italic;
+  filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+  -webkit-filter: invert(0.08) sepia(0.1) saturate(2) saturate(2) saturate(1.66)
+    hue-rotate(177deg) brightness(1.04) contrast(0.91);
+}
+
+/* msg drop */
+
+.emptyData {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+}
+.emptyDataString {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0;
+}
+
+.emptyDataString span {
+  font-size: 1.9rem;
+  font-weight: 600;
+  display: block;
+  color: #8a8d91;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.emptyDataActionButton {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  font-size: 18px;
+  font-weight: 500;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+  border-radius: 6px;
+  padding: 6px 12px;
+  color: #fff;
+  background-color: #1877f2;
+  transition: all, 150ms;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  max-width: 150px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.emptyDataActionButton:hover {
+  background-color: #3578e5;
+}
+.emptyDataActionButton:active {
+  filter: brightness(90%);
+  transform: scale(0.97);
+
+  transition: all, 150ms;
+}
+
+.notSeenColor {
+  color: #1876f2 !important;
+}
+.newMessageIcon {
+  background-image: url(http://localhost:3000/img/newMessageIcon.png);
+  background-position: 0px -1671px;
+  background-size: auto;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: -0.25em;
+  font-style: italic;
+  filter: invert(0.39) sepia(0.21) saturate(2) saturate(1.095)
+    hue-rotate(174deg) brightness(0.94) contrast(0.86);
+  -webkit-filter: invert(0.39) sepia(0.21) saturate(2) saturate(1.095)
+    hue-rotate(174deg) brightness(0.94) contrast(0.86);
+}
